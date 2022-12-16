@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>homework</title>
+<link rel="stylesheet" type="text/css">
+<style>
+body {background-color: black;}
+nav > ul
+{
+background-color:white;
+list-style:none;
+margin:0;
+padding:0;
+}
+nav a
+{
+color:inherit;
+display:block;
+font-size:1.2rem;
+padding:10px;
+text-decoration:none;
+}
+nav a:hover
+{
+background-color:rgb(115,115,115);
+color:white;
+}
+</style>
+<body>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="homework_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <nav>
+  	<ul>
+  	<li><a href="#" class="w3-bar-item w3-button">Home</a></li>
+  	<li><a href="#" class="w3-bar-item w3-button">Man</a></li>
+  	<li><a href="#" class="w3-bar-item w3-button">Woman</a></li>
+  	<li><a href="#" class="w3-bar-item w3-button">Kid</a></li>
+  	</ul>
+  </nav>
+</div>
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="homework_open()">☰</button>
+  <div class="w3-container" style="font-size:50px">
+  <font color="white"><b>Nike<b></font></div>
+</div>
+<script>
+function homework_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function homework_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
+
